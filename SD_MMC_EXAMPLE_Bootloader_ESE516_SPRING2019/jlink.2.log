@@ -1,0 +1,195 @@
+T87B8 46341:237.471   SEGGER J-Link V7.52a Log File
+T87B8 46341:237.560   DLL Compiled: Jul 28 2021 11:08:12
+T87B8 46341:237.584   Logging started @ 2023-05-05 05:58
+T87B8 46341:237.606 - 10965.962ms
+T87B8 46341:241.115 JLINK_ExecCommand("Device = ATSAMD21G18A", ...). 
+T87B8 46341:241.307   Device "ATSAMD21G18" selected.
+T87B8 46341:244.341 - 3.198ms returns 0x00
+T87B8 46341:279.704 JLINK_TIF_Select(JLINKARM_TIF_SWD)
+T87B8 46341:280.354 - 0.676ms returns 0x00
+T87B8 46341:280.394 JLINK_SetSpeed(4000)
+T87B8 46341:280.519 - 0.138ms
+T87B8 46341:280.546 JLINK_ResetPullsRESET(OFF)
+T87B8 46341:280.563 - 0.025ms
+T87B8 46341:280.581 JLINK_Connect()
+T87B8 46341:280.839   InitTarget() start
+T87B8 46341:280.881    J-Link Script File: Executing InitTarget()
+T87B8 46341:281.026   InitTarget()
+T87B8 46341:283.424   InitTarget() end
+T87B8 46341:284.211   Found SW-DP with ID 0x0BC11477
+T87B8 46341:286.463   DPIDR: 0x0BC11477
+T87B8 46341:286.493   Scanning AP map to find all available APs
+T87B8 46341:287.084   AP[1]: Stopped AP scan as end of AP map has been reached
+T87B8 46341:287.106   AP[0]: AHB-AP (IDR: 0x04770031)
+T87B8 46341:287.125   Iterating through AP map to find AHB-AP to use
+T87B8 46341:287.897   AP[0]: Core found
+T87B8 46341:287.918   AP[0]: AHB-AP ROM base: 0x41003000
+T87B8 46341:288.316   CPUID register: 0x410CC601. Implementer code: 0x41 (ARM)
+T87B8 46341:288.336   Found Cortex-M0 r0p1, Little endian.
+T87B8 46341:388.811   -- Max. mem block: 0x000013E0
+T87B8 46341:388.954   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T87B8 46341:389.341   CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T87B8 46341:389.658   CPU_ReadMem(4 bytes @ 0xE0002000)
+T87B8 46341:389.988   FPUnit: 4 code (BP) slots and 0 literal slots
+T87B8 46341:390.001   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T87B8 46341:390.288   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T87B8 46341:390.601   CPU_ReadMem(4 bytes @ 0xE0001000)
+T87B8 46341:390.881   CPU_WriteMem(4 bytes @ 0xE0001000)
+T87B8 46341:391.206   CoreSight components:
+T87B8 46341:391.226   ROMTbl[0] @ 41003000
+T87B8 46341:391.236   CPU_ReadMem(64 bytes @ 0x41003000)
+T87B8 46341:391.925   CPU_ReadMem(32 bytes @ 0xE00FFFE0)
+T87B8 46341:392.420   ROMTbl[0][0]: E00FF000, CID: B105100D, PID: 000BB4C0 ROM Table
+T87B8 46341:392.449   ROMTbl[1] @ E00FF000
+T87B8 46341:392.476   CPU_ReadMem(64 bytes @ 0xE00FF000)
+T87B8 46341:393.352   CPU_ReadMem(32 bytes @ 0xE000EFE0)
+T87B8 46341:393.978   ROMTbl[1][0]: E000E000, CID: B105E00D, PID: 000BB008 SCS
+T87B8 46341:393.996   CPU_ReadMem(32 bytes @ 0xE0001FE0)
+T87B8 46341:394.531   ROMTbl[1][1]: E0001000, CID: B105E00D, PID: 000BB00A DWT
+T87B8 46341:394.545   CPU_ReadMem(32 bytes @ 0xE0002FE0)
+T87B8 46341:395.045   ROMTbl[1][2]: E0002000, CID: B105E00D, PID: 000BB00B FPB
+T87B8 46341:395.060   CPU_ReadMem(32 bytes @ 0x41006FE0)
+T87B8 46341:395.563   ROMTbl[0][1]: 41006000, CID: B105900D, PID: 001BB932 MTB-M0+
+T87B8 46341:395.580 - 115.002ms returns 0x00
+T87B8 46341:395.627 JLINK_ExecCommand("ExcludeFlashCacheRange 0x0 - 0x40000", ...). 
+T87B8 46341:395.643 - 0.006ms returns 0x00
+T87B8 46341:395.667 JLINK_Halt()
+T87B8 46341:398.380 - 2.727ms returns 0x00
+T87B8 46341:399.915 JLINK_JTAG_GetDeviceID(DeviceIndex = 0)
+T87B8 46341:399.931 - 0.021ms returns 0
+T87B8 46341:399.943 JLINK_ReadMemU32(0x41002018, 0x1 Items)
+T87B8 46341:399.965   CPU_ReadMem(4 bytes @ 0x41002018)
+T87B8 46341:400.359   Data:  05 03 01 10
+T87B8 46341:400.374 - 0.434ms returns 1 (0x1)
+T6AC4 46341:408.968 JLINK_IsHalted()
+T6AC4 46341:409.347 - 0.394ms returns TRUE
+T6AC4 46341:409.373 JLINK_GetMOEs(...)
+T6AC4 46341:409.385   CPU_ReadMem(4 bytes @ 0xE000ED30)
+T6AC4 46341:411.271 - 1.915ms returns 0x01
+T6AC4 46341:411.300 JLINK_ReadReg(R15 (PC))
+T6AC4 46341:411.315 - 0.018ms returns 0x00019A8A
+T87B8 46341:441.723 JLINK_BeginDownload(Flags = 0x00000000)
+T87B8 46341:441.752 - 0.034ms
+T87B8 46341:441.781 JLINK_WriteMem(0x00000000, 0xD6B0 Bytes, ...)
+T87B8 46341:441.792   Data:  E0 2C 00 20 85 6C 00 00 7D 6D 00 00 7D 6D 00 00 ...
+T87B8 46341:442.073   completely In flash
+T87B8 46341:442.166    -- Read from flash cache (54960 bytes @ 0x00000000)
+T87B8 46341:442.254 - 0.478ms returns 0xD6B0
+T87B8 46341:442.490 JLINK_WriteMem(0x0000D6B0, 0xD0 Bytes, ...)
+T87B8 46341:442.506   Data:  40 1F 00 00 08 00 00 00 07 01 00 00 30 3A 73 64 ...
+T87B8 46341:442.523   completely In flash
+T87B8 46341:442.538    -- Read from flash cache (208 bytes @ 0x0000D6B0)
+T87B8 46341:442.552 - 0.066ms returns 0xD0
+T6AC4 46341:611.385 JLINK_IsHalted()
+T6AC4 46341:611.422 - 0.040ms returns TRUE
+T87B8 46341:612.250 JLINK_EndDownload()
+T87B8 46341:612.490   CPU_ReadMem(4 bytes @ 0x41006004)
+T87B8 46341:612.831   CPU_ReadMem(4 bytes @ 0xE000ED90)
+T87B8 46341:613.139    -- --------------------------------------
+T87B8 46341:613.168   Flash bank @ 0x00000000: Default: L2 verify disabled because algorithm performs L1 verify
+T87B8 46341:613.184    -- Start of determining dirty areas in flash cache
+T87B8 46341:613.244    -- End of determining dirty areas
+T87B8 46341:613.258    -- Start of preparing flash programming
+T87B8 46341:613.276    -- Calculating RAM usage
+T87B8 46341:613.295    -- RAM usage = 3876 Bytes
+T87B8 46341:613.305    -- Preserving CPU registers
+T87B8 46341:613.327    -- Preparing memory
+T87B8 46341:613.340    -- Preparing target
+T87B8 46341:613.355    -- Preserving target RAM temporarily used for programming
+T87B8 46341:638.412    -- Downloading RAMCode
+T87B8 46341:655.830    -- Preparing RAMCode
+T87B8 46341:661.022    -- Checking target RAM
+T87B8 46341:662.257    -- End of preparing flash programming
+T87B8 46341:662.472   Looking for J-Link GUI Server exe at: C:\Program Files (x86)\Atmel\Studio\7.0\atbackend\JLinkGUIServer.exe
+T87B8 46341:662.547   Looking for J-Link GUI Server exe at: \JLinkGUIServer.exe
+T87B8 46341:965.295   Failed to connect to J-Link GUI Server.
+T87B8 46341:982.536    -- CPU speed could not be measured.
+T87B8 46341:982.586    -- Start of comparing flash
+T87B8 46341:982.606    -- CRC check was estimated as fastest method
+T87B8 46341:982.629    -- Comparing range 0x0000 - 0x7FFF (128 Sectors, 32 KiB), using multi-block CRC calculation
+T87B8 46342:007.967    -- All CRCs match
+T87B8 46342:008.014    -- Comparing range 0x8000 - 0xD7FF (88 Sectors, 22 KiB), using multi-block CRC calculation
+T87B8 46342:025.978    -- All CRCs match
+T87B8 46342:026.018    -- Comparing range 0x0000 - 0x7FFF (128 Sectors, 32 KiB), using alternative multi-block CRC calculation
+T87B8 46342:051.508    -- All CRCs match
+T87B8 46342:051.539    -- Comparing range 0x8000 - 0xD7FF (88 Sectors, 22 KiB), using alternative multi-block CRC calculation
+T87B8 46342:069.602    -- All CRCs match
+T87B8 46342:069.634    -- End of comparing flash
+T87B8 46342:069.647    -- Start of erasing sectors
+T87B8 46342:069.658    -- End of erasing sectors
+T87B8 46342:069.670    -- Start of flash programming
+T87B8 46342:069.681    -- End of flash programming
+T87B8 46342:069.692    -- Start of restoring
+T87B8 46342:069.704    -- Restoring RAMCode
+T87B8 46342:073.448    -- Restoring target memory
+T87B8 46342:092.878    -- Restore target
+T87B8 46342:092.914    -- Restore memory
+T87B8 46342:092.924    -- Restoring CPU registers
+T87B8 46342:092.946    -- End of restoring
+T87B8 46342:093.002    -- Bank 0 @ 0x00000000: Skipped. Contents already match
+T87B8 46342:093.014    -- Bank 0 @ 0x00000000: Skipped. Contents already match
+T87B8 46342:095.453 - 483.219ms returns 0 (0x0)
+T87B8 46342:095.630 JLINK_ResetPullsRESET(ON)
+T87B8 46342:095.647 - 0.022ms
+T87B8 46342:095.660 JLINK_ResetNoHalt()
+T87B8 46342:095.925   InitTarget() start
+T87B8 46342:095.948    J-Link Script File: Executing InitTarget()
+T87B8 46342:095.971   InitTarget()
+T87B8 46342:098.328   InitTarget() end
+T87B8 46342:098.888   Found SW-DP with ID 0x0BC11477
+T87B8 46342:100.946   DPIDR: 0x0BC11477
+T87B8 46342:100.997   AP map detection skipped. Manually configured AP map found.
+T87B8 46342:101.030   AP[0]: AHB-AP (IDR: Not set)
+T87B8 46342:101.982   AP[0]: Core found
+T87B8 46342:102.016   AP[0]: AHB-AP ROM base: 0x41003000
+T87B8 46342:102.487   CPUID register: 0x410CC601. Implementer code: 0x41 (ARM)
+T87B8 46342:102.568   Found Cortex-M0 r0p1, Little endian.
+T87B8 46342:203.318   -- Max. mem block: 0x000010C8
+T87B8 46342:203.364   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T87B8 46342:203.672   CPU_ReadMem(4 bytes @ 0xE0002000)
+T87B8 46342:204.011   FPUnit: 4 code (BP) slots and 0 literal slots
+T87B8 46342:204.026   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T87B8 46342:204.343   CPU_ReadMem(4 bytes @ 0xE0001000)
+T87B8 46342:204.686   CoreSight components:
+T87B8 46342:204.709   ROMTbl[0] @ 41003000
+T87B8 46342:204.720   CPU_ReadMem(64 bytes @ 0x41003000)
+T87B8 46342:205.444   CPU_ReadMem(32 bytes @ 0xE00FFFE0)
+T87B8 46342:206.001   ROMTbl[0][0]: E00FF000, CID: B105100D, PID: 000BB4C0 ROM Table
+T87B8 46342:206.031   ROMTbl[1] @ E00FF000
+T87B8 46342:206.043   CPU_ReadMem(64 bytes @ 0xE00FF000)
+T87B8 46342:206.748   CPU_ReadMem(32 bytes @ 0xE000EFE0)
+T87B8 46342:207.312   ROMTbl[1][0]: E000E000, CID: B105E00D, PID: 000BB008 SCS
+T87B8 46342:207.328   CPU_WriteMem(4 bytes @ 0xE0001000)
+T87B8 46342:207.691   CPU_ReadMem(32 bytes @ 0xE0001FE0)
+T87B8 46342:208.239   ROMTbl[1][1]: E0001000, CID: B105E00D, PID: 000BB00A DWT
+T87B8 46342:208.255   CPU_ReadMem(32 bytes @ 0xE0002FE0)
+T87B8 46342:208.771   ROMTbl[1][2]: E0002000, CID: B105E00D, PID: 000BB00B FPB
+T87B8 46342:208.787   CPU_ReadMem(32 bytes @ 0x41006FE0)
+T87B8 46342:209.302   ROMTbl[0][1]: 41006000, CID: B105900D, PID: 001BB932 MTB-M0+
+T87B8 46342:209.322   JLINK_Reset()
+T87B8 46342:209.332     CPU_ReadMem(4 bytes @ 0x20000000)
+T87B8 46342:209.672     CPU_WriteMem(4 bytes @ 0x20000000)
+T87B8 46342:209.989     ResetTarget() start
+T87B8 46342:210.001      J-Link Script File: Executing ResetTarget()
+T87B8 46342:210.288     CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T87B8 46342:210.590     CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T87B8 46342:210.911     CPU_WriteMem(4 bytes @ 0xE000ED0C)
+T87B8 46342:212.474     CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T87B8 46342:212.859     CPU_ReadMem(4 bytes @ 0x41002100)
+T87B8 46342:213.334     CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T87B8 46342:213.896     ResetTarget() end
+T87B8 46342:217.395     CPU_WriteMem(4 bytes @ 0xE0002000)
+T87B8 46342:217.840     CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T87B8 46342:218.148     CPU_ReadMem(4 bytes @ 0xE0001000)
+T87B8 46342:218.477     CPU_WriteMem(4 bytes @ 0xE0001000)
+T87B8 46342:218.836   - 9.525ms
+T87B8 46342:218.856   JLINK_Go()
+T87B8 46342:218.872     CPU_ReadMem(4 bytes @ 0xE0001000)
+T87B8 46342:219.186     CPU_WriteMem(4 bytes @ 0xE0001000)
+T87B8 46342:219.557     CPU_WriteMem(4 bytes @ 0xE0001004)
+T87B8 46342:220.336   - 1.486ms
+T87B8 46342:220.346 - 124.689ms
+T87B8 46342:229.949 JLINK_Close()
+T87B8 46342:240.677 - 10.764ms
+T87B8 46342:240.720   
+T87B8 46342:240.729   Closed
